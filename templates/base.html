@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask App</title>
+    <!-- Links to your local Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container mt-4">
+        <!-- This is where child templates will insert their code -->
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Links to your local Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>
